@@ -5,13 +5,13 @@
 int main()
 {
 	cout << "Testing NonProfessionalEmployee class: " << endl << endl;
-	NonProfessionalEmployee Jimmy(20, 40, 23.16, 240);
+	NonProfessionalEmployee Jimmy(20, 40, 14.1, 240);
 	cout << "calcVacationDays(): " << Jimmy.calcVacationDays() << endl;
 	cout << "calcWeeklySalary(): " << Jimmy.calcWeeklySalary() << endl;
 	cout << "calcHealthCare(): " << Jimmy.calcHealthcare() << endl << endl;
 
 	cout << "Testing ProfessionalEmployee class: " << endl << endl;
-	ProfessionalEmployee John(30, 40, 27.32, 15);
+	ProfessionalEmployee John(30, 40, 13500, 15);
 	cout << "calcVacationDays(): " << John.calcVacationDays() << endl;
 	cout << "calcWeeklySalary(): " << John.calcWeeklySalary() << endl;
 	cout << "calcHealthCare(): " << John.calcHealthcare() << endl << endl;

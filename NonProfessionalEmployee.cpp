@@ -10,7 +10,7 @@ NonProfessionalEmployee::NonProfessionalEmployee(int healthCare, int hoursWorked
 // Post: returns a double representing the weekly salary
 double NonProfessionalEmployee::calcWeeklySalary()
 {
-	return (hoursWorked * hourlySalary * 7.0);
+	return (hoursWorked * (hourlySalary-1) * 5.0);
 }
 
 // Pre: None
