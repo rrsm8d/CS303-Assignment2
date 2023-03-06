@@ -224,7 +224,7 @@ bool SingleLinkedList::remove(size_t index)
 }
 
 // Pre: an Item_Type struct
-// Post: return index of found item. if not found, returns -1
+// Post: return index of found item. if not found, returns the size
 size_t SingleLinkedList::find(const Item_Type& item)
 {
     Node* tempPtr = headPtr;
@@ -240,5 +240,5 @@ size_t SingleLinkedList::find(const Item_Type& item)
             tempPtr = tempPtr->nextPtr;
         }
     }
-    return -1;
+    return this->numItems;
 }
